@@ -50,3 +50,6 @@ color magenta "@author.*"
 
 ## Trailing whitespace
 color ,green "[[:space:]]+$"
+
+formatter astyle --style=allman
+linter clang-format -style=llvm

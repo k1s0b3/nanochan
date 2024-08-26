@@ -27,6 +27,7 @@ include "~/.nano/go.nanorc"
 include "~/.nano/gradle.nanorc"
 include "~/.nano/groff.nanorc"
 include "~/.nano/haml.nanorc"
+include "~/.nano/hare.nanorc"
 include "~/.nano/haskell.nanorc"
 include "~/.nano/html.nanorc"
 include "~/.nano/html.j2.nanorc"
@@ -88,3 +89,187 @@ include "~/.nano/xresources.nanorc"
 include "~/.nano/yaml.nanorc"
 include "~/.nano/yum.nanorc"
 include "~/.nano/zsh.nanorc"
+
+# wrap lines at blanks when softwrap enabled
+set atblanks
+
+# enable autoindent
+set autoindent
+
+# display cursor position
+set constantshow
+
+# custom color
+set errorcolor red,normal
+
+# save search history
+set historylog
+
+# display scrollbar
+set indicator
+
+# custom color
+set keycolor cyan
+
+# show linenumbers
+set linenumbers
+
+# mouse support
+#set mouse # it doesn't work well on mac
+
+# multibuffer support
+set multibuffer
+
+# don't convert files from DOS/Mac format.
+set noconvert
+
+# custom color
+set numbercolor yellow,normal
+
+# save the positionlog
+set positionlog
+
+# enable regex search
+set regexp
+
+# enable smarthome
+set smarthome
+
+# enable softwrap
+set softwrap
+
+# set spellchecker
+set speller "aspell -c"
+
+# show stateflags
+set stateflags
+
+# custom color
+set statuscolor yellow,normal
+
+# tabsize
+set tabsize 4
+
+# convert tabs to spaces
+set tabstospaces
+
+# custom color
+set titlecolor yellow,normal
+
+# these chars are considered as parts of words
+set wordchars "_"
+
+# erase marked region
+set zap
+
+# unbinding ^
+unbind ^L all
+unbind ^V all
+unbind ^Y all
+
+# unbinding M
+unbind M-U all
+unbind M-3 all
+unbind M-6 all
+
+# ^ in all menu
+bind ^Q exit all
+bind ^G delete all
+bind ^U pageup all
+bind ^D pagedown all
+bind ^J nextword all
+bind ^K prevword all
+bind ^/ whereis all
+bind ^\ wherewas all
+
+# M in all menu
+bind M-Z suspend all
+bind M-? help all
+bind M-G constantshow all
+bind M-R refresh all
+bind M-T smarthome all
+bind M-H zero all
+bind M-/ findnext all
+bind M-\ findprevious all
+
+# ^ in main menu
+bind ^C copy main
+bind ^V paste main
+bind ^X cut main
+bind ^Z undo main
+bind ^Y redo main
+bind ^R replace main
+bind ^O insert main
+bind ^W gotoline main
+bind ^L mark main
+bind ^@ center main
+
+# M in main menu
+bind M-C location main
+bind M-A writeout main
+bind M-E comment main
+bind M-^ cutrestoffile main
+bind M-J justify main
+bind M-U fulljustify main
+bind M-Q firstline main
+bind M-W lastline main
+bind M-, prevbuf main
+bind M-. nextbuf main
+bind M-- scrollup main
+bind M-+ scrolldown main
+bind M-1 anchor main
+bind M-2 prevanchor main
+bind M-3 nextanchor main
+bind M-4 zap main
+bind M-5 speller main
+bind M-6 "{firstline}{mark}{lastline}" main
+bind M-7 prevblock main
+bind M-8 nextblock main
+
+# Sh-M in main menu
+bind Sh-M-Z zap main
+bind Sh-M-H chopwordleft main
+bind Sh-M-G chopwordright main
+
+# ^ in help menu
+bind ^A firstline help
+bind ^E lastline help
+
+# M in search menu
+bind M-E regexp search
+
+# M in replace menu
+bind M-E regexp replace
+
+# ^ in gotoline menu
+bind ^A firstline gotoline
+bind ^E lastline gotoline
+
+# ^ in writeout menu
+bind ^F browser writeout
+
+# M in writeout menu
+bind M-Q discardbuffer writeout
+bind M-W macformat writeout
+
+# ^ in insert menu
+bind ^F browser insert
+
+# ^ in browser menu
+bind ^G gotodir browser
+bind ^A firstfile browser
+bind ^E lastfile browser
+bind ^I prevblock browser
+bind ^O nextblock browser
+
+# ^ in whereis file menu
+bind ^A firstfile whereisfile
+bind ^E lastfile whereisfile
+
+# ^ in execute menu
+bind ^F formatter execute
+bind ^L linter execute
+bind ^X cutrestoffile execute
+bind ^J fulljustify execute
+bind ^N flipnewbuffer execute
+bind ^P flippipe execute

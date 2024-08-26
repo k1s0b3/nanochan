@@ -21,3 +21,6 @@ color brightblack start="^\s*/\*" end="\*/"
 color brightwhite,cyan "TODO:?"
 color ,green "[[:space:]]+$"
 color ,red "	+ +| +	+"
+
+formatter go fmt -x
+linter golangci-lint run

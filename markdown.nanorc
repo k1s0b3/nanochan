@@ -49,3 +49,6 @@ color yellow "^```$"
 
 ## Trailing spaces
 color ,green "[[:space:]]+$"
+
+## Math
+color brightcyan "(^|[[:space:]])\$[^ ][^\$]*\$"
