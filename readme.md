@@ -1,6 +1,6 @@
 # Nanochan - Advanced configurations for GNU nano
 
-This is a personal fork of [scopatz/nanorc](https://github.com/scopatz/nanorc) which is released under GNU GPL v3.0+. The name is derived from GNU nano text editor itself and "changer".
+This is a personal fork of [scopatz/nanorc](https://github.com/scopatz/nanorc) released under GNU GPL v3.0+. The name is derived from GNU nano text editor itself and "changer".
 
 ## TOC
 
@@ -198,7 +198,7 @@ Syntax highlighting is mainly based on [scopatz/nanorc](https://github.com/scopa
 
 ## Installation
 
-Please move `$HOME/.nano/` and `$HOME/.nanorc`  to any other directories if exist before installing.
+Please move `$HOME/.nano/` and `$HOME/.nanorc`  to any other directories if they exist before installing.
 
 ```bash
 $ cd $HOME # move to home directory
